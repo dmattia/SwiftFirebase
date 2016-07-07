@@ -13,8 +13,13 @@ class JabroniViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        User.fromSnapshotWithId("-KM2G44QbDS4KgdBVIdy", whenLoaded: {
+        User.fromSnapshotWithId("-KM2Qa7SEhvoJ32TLyS6", whenLoaded: {
             user in
+            print("when loaded")
+            print(user.asJson())
+        }, whenChildChanged: {
+            user in
+            print("child changed")
             print(user.asJson())
         })
     }

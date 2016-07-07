@@ -24,7 +24,7 @@ class JabroniTests: XCTestCase {
     func testDataDownload() {
         let expectation = expectationWithDescription("Waiting for object to be created")
         
-        User.fromSnapshotWithId("-KM2G44QbDS4KgdBVIdy", whenLoaded: {
+        User.fromSnapshotWithId("-KM2Qa7SEhvoJ32TLyS6", whenLoaded: {
             jabroniObject in
             if let user = jabroniObject as? User {
                 XCTAssertNotNil(user.name)

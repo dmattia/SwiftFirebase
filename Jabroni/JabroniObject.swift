@@ -11,27 +11,45 @@ import Firebase
 
 class JabroniObject : NSObject {
     
-    internal var whenLoaded : JabroniObject -> () = {_ in 
+    internal var whenLoaded: JabroniObject -> () = {_ in
         print("Loaded JabroniObject")
+    }
+    internal var whenChildChanged: JabroniObject -> () = {_ in
+        print("Child Added")
     }
     
     required override init() {
         
     }
     
-    required init(snapshotId: String, whenLoaded: JabroniObject -> ()) {
+    required init(snapshotId: String,
+                  whenLoaded: JabroniObject -> (),
+                  whenChildChanged: JabroniObject -> ()) {
         self.whenLoaded = whenLoaded
+        self.whenChildChanged = whenChildChanged
         super.init()
         
         let ref = FIRDatabase.database().reference().child(snapshotId).child("Test Table/Row1")
-        ref.observeEventType(FIRDataEventType.Value, withBlock: { (snapshot) in
+        ref.observeSingleEventOfType(FIRDataEventType.Value, withBlock: {
+            snapshot in
             self.loadFromSnapshot(snapshot)
             self.whenLoaded(self)
         })
+        ref.observeEventType(.ChildChanged, withBlock: {
+            snapshot in
+            if (self.respondsToSelector(NSSelectorFromString(snapshot.key))) {
+                self.setValue(snapshot.value!, forKey: snapshot.key)
+            }
+            self.whenChildChanged(self)
+        })
     }
     
-    class func fromSnapshotWithId(snapshotId: String, whenLoaded: JabroniObject -> ()) -> Self {
-        let object = self.init(snapshotId: snapshotId, whenLoaded: whenLoaded)
+    class func fromSnapshotWithId(snapshotId: String,
+                                  whenLoaded: JabroniObject -> (),
+                                  whenChildChanged: JabroniObject -> ()) -> Self {
+        let object = self.init(snapshotId: snapshotId,
+                               whenLoaded: whenLoaded,
+                               whenChildChanged: whenChildChanged)
         
         return object
     }
