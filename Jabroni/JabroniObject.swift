@@ -10,58 +10,39 @@ import Foundation
 import Firebase
 
 class JabroniObject : NSObject {
-    
-    internal var whenLoaded: JabroniObject -> () = {_ in
-        print("Loaded JabroniObject")
-    }
+
+    internal let ref: FIRDatabaseReference!
+    internal let snapshot: FIRDataSnapshot!
     internal var whenChildChanged: JabroniObject -> () = {_ in
         print("Child Added")
     }
     
-    required override init() {
-        
+    init(fromOtherJabroniObject: JabroniObject) {
+        self.ref = fromOtherJabroniObject.ref
+        self.snapshot = fromOtherJabroniObject.snapshot
     }
     
-    required init(snapshotId: String,
-                  whenLoaded: JabroniObject -> (),
-                  whenChildChanged: JabroniObject -> ()) {
-        self.whenLoaded = whenLoaded
-        self.whenChildChanged = whenChildChanged
-        super.init()
-        
-        let ref = FIRDatabase.database().reference().child(snapshotId).child("Test Table/Row1")
-        ref.observeSingleEventOfType(FIRDataEventType.Value, withBlock: {
-            snapshot in
-            self.loadFromSnapshot(snapshot)
-            self.whenLoaded(self)
-        })
-        ref.observeEventType(.ChildChanged, withBlock: {
-            snapshot in
-            if (self.respondsToSelector(NSSelectorFromString(snapshot.key))) {
-                self.setValue(snapshot.value!, forKey: snapshot.key)
-            }
-            self.whenChildChanged(self)
-        })
+    init(ref: FIRDatabaseReference, withSnapshot: FIRDataSnapshot) {
+        self.ref = ref
+        self.snapshot = withSnapshot
     }
     
-    class func fromSnapshotWithId(snapshotId: String,
-                                  whenLoaded: JabroniObject -> (),
-                                  whenChildChanged: JabroniObject -> ()) -> Self {
-        let object = self.init(snapshotId: snapshotId,
-                               whenLoaded: whenLoaded,
-                               whenChildChanged: whenChildChanged)
-        
-        return object
-    }
-    
-    func loadFromSnapshot(snapshot: FIRDataSnapshot) {
-        for child in snapshot.children {
+    func loadFromSnapshot() {
+        for child in self.snapshot.children {
             let keyName = child.key!
             
             if (respondsToSelector(NSSelectorFromString(keyName))) {
                 setValue(child.value, forKey: keyName)
             }
         }
+    }
+    
+    func beginWatchingForChanges(onChange: JabroniObject -> ()) {
+        self.ref.observeSingleEventOfType(FIRDataEventType.Value, withBlock: {
+            snapshot in
+            self.loadFromSnapshot()
+            onChange(self)
+        })
     }
     
     func propertyNames() -> [String] {

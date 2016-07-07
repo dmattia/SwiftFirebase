@@ -13,14 +13,28 @@ class JabroniViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        User.fromSnapshotWithId("-KM2Qa7SEhvoJ32TLyS6", whenLoaded: {
-            user in
-            print("when loaded")
+        let userQuery = JabroniQuery(className: "Test Table")
+        userQuery.getObjectInBackgroundWithId("Row2", afterCompletion: {
+            jabroniObject in
+            
+            var user = User(fromOtherJabroniObject: jabroniObject)
+            user.loadFromSnapshot()
             print(user.asJson())
-        }, whenChildChanged: {
-            user in
-            print("child changed")
-            print(user.asJson())
+
+            user.beginWatchingForChanges({
+                newUser in
+                user = User(fromOtherJabroniObject: newUser)
+                print(user.asJson())
+            })
+        })
+        
+        let dealQuery = JabroniQuery(className: "Deals")
+        dealQuery.getObjectInBackgroundWithId("deal1", afterCompletion: {
+            jabroniObject in
+            
+            let deal = Deal(fromOtherJabroniObject: jabroniObject)
+            deal.loadFromSnapshot()
+            print(deal.asJson())
         })
     }
 }

@@ -18,6 +18,7 @@
 		F12D50E61D2DD68E00E96561 /* JabroniQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50E51D2DD68E00E96561 /* JabroniQuery.swift */; };
 		F12D50E81D2DD6BD00E96561 /* JabroniObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50E71D2DD6BD00E96561 /* JabroniObject.swift */; };
 		F12D50EE1D2DD8B300E96561 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50ED1D2DD8B300E96561 /* User.swift */; };
+		F1A00F0A1D2EB7F2005CA4E6 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A00F091D2EB7F2005CA4E6 /* Deal.swift */; };
 		F1AD64841D2DEAD9001D5B72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1AD64831D2DEAD9001D5B72 /* GoogleService-Info.plist */; };
 		F1AD64851D2DEAD9001D5B72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1AD64831D2DEAD9001D5B72 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		F12D50E51D2DD68E00E96561 /* JabroniQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JabroniQuery.swift; sourceTree = "<group>"; };
 		F12D50E71D2DD6BD00E96561 /* JabroniObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JabroniObject.swift; sourceTree = "<group>"; };
 		F12D50ED1D2DD8B300E96561 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F1A00F091D2EB7F2005CA4E6 /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 		F1AD64831D2DEAD9001D5B72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FEA2827881606FA0EC24EC33 /* Pods-JabroniTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JabroniTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JabroniTests/Pods-JabroniTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 				F12D50EB1D2DD73000E96561 /* Storyboards */,
 				F12D50C31D2DD2D500E96561 /* AppDelegate.swift */,
 				F12D50ED1D2DD8B300E96561 /* User.swift */,
+				F1A00F091D2EB7F2005CA4E6 /* Deal.swift */,
 				F12D50CF1D2DD2D500E96561 /* Info.plist */,
 			);
 			path = Jabroni;
@@ -378,6 +381,7 @@
 				F12D50E41D2DD2E300E96561 /* JabroniViewController.swift in Sources */,
 				F12D50C41D2DD2D500E96561 /* AppDelegate.swift in Sources */,
 				F12D50E81D2DD6BD00E96561 /* JabroniObject.swift in Sources */,
+				F1A00F0A1D2EB7F2005CA4E6 /* Deal.swift in Sources */,
 				F12D50EE1D2DD8B300E96561 /* User.swift in Sources */,
 				F12D50E61D2DD68E00E96561 /* JabroniQuery.swift in Sources */,
 			);
