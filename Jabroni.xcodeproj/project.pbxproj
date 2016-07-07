@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		548755CE4A8ECFF386BAC1BB /* Pods_JabroniTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8040694C3AA9511B2C6C1B /* Pods_JabroniTests.framework */; };
+		CD355BAADC9501D852B69B63 /* Pods_Jabroni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA07AF35DAE291887F39329 /* Pods_Jabroni.framework */; };
+		F12D50C41D2DD2D500E96561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50C31D2DD2D500E96561 /* AppDelegate.swift */; };
+		F12D50C91D2DD2D500E96561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12D50C71D2DD2D500E96561 /* Main.storyboard */; };
+		F12D50CB1D2DD2D500E96561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12D50CA1D2DD2D500E96561 /* Assets.xcassets */; };
+		F12D50CE1D2DD2D500E96561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12D50CC1D2DD2D500E96561 /* LaunchScreen.storyboard */; };
+		F12D50D91D2DD2D500E96561 /* JabroniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50D81D2DD2D500E96561 /* JabroniTests.swift */; };
+		F12D50E41D2DD2E300E96561 /* JabroniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50E31D2DD2E300E96561 /* JabroniViewController.swift */; };
+		F12D50E61D2DD68E00E96561 /* JabroniQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50E51D2DD68E00E96561 /* JabroniQuery.swift */; };
+		F12D50E81D2DD6BD00E96561 /* JabroniObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50E71D2DD6BD00E96561 /* JabroniObject.swift */; };
+		F12D50EE1D2DD8B300E96561 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D50ED1D2DD8B300E96561 /* User.swift */; };
+		F1AD64841D2DEAD9001D5B72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1AD64831D2DEAD9001D5B72 /* GoogleService-Info.plist */; };
+		F1AD64851D2DEAD9001D5B72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1AD64831D2DEAD9001D5B72 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F12D50D51D2DD2D500E96561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F12D50B81D2DD2D500E96561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12D50BF1D2DD2D500E96561;
+			remoteInfo = Jabroni;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4981540D45A057486B12A5FC /* Pods-Jabroni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jabroni.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jabroni/Pods-Jabroni.debug.xcconfig"; sourceTree = "<group>"; };
+		4CA07AF35DAE291887F39329 /* Pods_Jabroni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jabroni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCBCCCD5711FCDD84AAD5DF /* Pods-JabroniTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JabroniTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JabroniTests/Pods-JabroniTests.release.xcconfig"; sourceTree = "<group>"; };
+		739C77C2B4E0B3066711218B /* Pods-Jabroni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jabroni.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jabroni/Pods-Jabroni.release.xcconfig"; sourceTree = "<group>"; };
+		EB8040694C3AA9511B2C6C1B /* Pods_JabroniTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JabroniTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12D50C01D2DD2D500E96561 /* Jabroni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jabroni.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12D50C31D2DD2D500E96561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F12D50C81D2DD2D500E96561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F12D50CA1D2DD2D500E96561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F12D50CD1D2DD2D500E96561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F12D50CF1D2DD2D500E96561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12D50D41D2DD2D500E96561 /* JabroniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JabroniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12D50D81D2DD2D500E96561 /* JabroniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabroniTests.swift; sourceTree = "<group>"; };
+		F12D50DA1D2DD2D500E96561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12D50E31D2DD2E300E96561 /* JabroniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JabroniViewController.swift; sourceTree = "<group>"; };
+		F12D50E51D2DD68E00E96561 /* JabroniQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JabroniQuery.swift; sourceTree = "<group>"; };
+		F12D50E71D2DD6BD00E96561 /* JabroniObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JabroniObject.swift; sourceTree = "<group>"; };
+		F12D50ED1D2DD8B300E96561 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F1AD64831D2DEAD9001D5B72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEA2827881606FA0EC24EC33 /* Pods-JabroniTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JabroniTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JabroniTests/Pods-JabroniTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F12D50BD1D2DD2D500E96561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD355BAADC9501D852B69B63 /* Pods_Jabroni.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12D50D11D2DD2D500E96561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548755CE4A8ECFF386BAC1BB /* Pods_JabroniTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83CC0ADF79858F4D8CFE0C5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4981540D45A057486B12A5FC /* Pods-Jabroni.debug.xcconfig */,
+				739C77C2B4E0B3066711218B /* Pods-Jabroni.release.xcconfig */,
+				FEA2827881606FA0EC24EC33 /* Pods-JabroniTests.debug.xcconfig */,
+				5BCBCCCD5711FCDD84AAD5DF /* Pods-JabroniTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B839B482EE595827703F3D8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CA07AF35DAE291887F39329 /* Pods_Jabroni.framework */,
+				EB8040694C3AA9511B2C6C1B /* Pods_JabroniTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F12D50B71D2DD2D500E96561 = {
+			isa = PBXGroup;
+			children = (
+				F1AD64831D2DEAD9001D5B72 /* GoogleService-Info.plist */,
+				F12D50C21D2DD2D500E96561 /* Jabroni */,
+				F12D50D71D2DD2D500E96561 /* JabroniTests */,
+				F12D50C11D2DD2D500E96561 /* Products */,
+				83CC0ADF79858F4D8CFE0C5B /* Pods */,
+				B839B482EE595827703F3D8A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F12D50C11D2DD2D500E96561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F12D50C01D2DD2D500E96561 /* Jabroni.app */,
+				F12D50D41D2DD2D500E96561 /* JabroniTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F12D50C21D2DD2D500E96561 /* Jabroni */ = {
+			isa = PBXGroup;
+			children = (
+				F12D50E91D2DD71200E96561 /* Jabroni Models */,
+				F12D50EC1D2DD75300E96561 /* Assets */,
+				F12D50EA1D2DD72500E96561 /* View Controllers */,
+				F12D50EB1D2DD73000E96561 /* Storyboards */,
+				F12D50C31D2DD2D500E96561 /* AppDelegate.swift */,
+				F12D50ED1D2DD8B300E96561 /* User.swift */,
+				F12D50CF1D2DD2D500E96561 /* Info.plist */,
+			);
+			path = Jabroni;
+			sourceTree = "<group>";
+		};
+		F12D50D71D2DD2D500E96561 /* JabroniTests */ = {
+			isa = PBXGroup;
+			children = (
+				F12D50D81D2DD2D500E96561 /* JabroniTests.swift */,
+				F12D50DA1D2DD2D500E96561 /* Info.plist */,
+			);
+			path = JabroniTests;
+			sourceTree = "<group>";
+		};
+		F12D50E91D2DD71200E96561 /* Jabroni Models */ = {
+			isa = PBXGroup;
+			children = (
+				F12D50E51D2DD68E00E96561 /* JabroniQuery.swift */,
+				F12D50E71D2DD6BD00E96561 /* JabroniObject.swift */,
+			);
+			name = "Jabroni Models";
+			sourceTree = "<group>";
+		};
+		F12D50EA1D2DD72500E96561 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F12D50E31D2DD2E300E96561 /* JabroniViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F12D50EB1D2DD73000E96561 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F12D50CC1D2DD2D500E96561 /* LaunchScreen.storyboard */,
+				F12D50C71D2DD2D500E96561 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F12D50EC1D2DD75300E96561 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F12D50CA1D2DD2D500E96561 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F12D50BF1D2DD2D500E96561 /* Jabroni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12D50DD1D2DD2D500E96561 /* Build configuration list for PBXNativeTarget "Jabroni" */;
+			buildPhases = (
+				DAC0619E08B720D7F176E8EB /* [CP] Check Pods Manifest.lock */,
+				F12D50BC1D2DD2D500E96561 /* Sources */,
+				F12D50BD1D2DD2D500E96561 /* Frameworks */,
+				F12D50BE1D2DD2D500E96561 /* Resources */,
+				891F0C3F0D57137073D2CABD /* [CP] Embed Pods Frameworks */,
+				15867C9CEADAE841336A639F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jabroni;
+			productName = Jabroni;
+			productReference = F12D50C01D2DD2D500E96561 /* Jabroni.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F12D50D31D2DD2D500E96561 /* JabroniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12D50E01D2DD2D500E96561 /* Build configuration list for PBXNativeTarget "JabroniTests" */;
+			buildPhases = (
+				CD7AEE825EF16622B41D4AF1 /* [CP] Check Pods Manifest.lock */,
+				F12D50D01D2DD2D500E96561 /* Sources */,
+				F12D50D11D2DD2D500E96561 /* Frameworks */,
+				F12D50D21D2DD2D500E96561 /* Resources */,
+				1DC4146F71A37DC9C18FA446 /* [CP] Embed Pods Frameworks */,
+				13B60D4299130F7E001B8904 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F12D50D61D2DD2D500E96561 /* PBXTargetDependency */,
+			);
+			name = JabroniTests;
+			productName = JabroniTests;
+			productReference = F12D50D41D2DD2D500E96561 /* JabroniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F12D50B81D2DD2D500E96561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "South Bend Code School";
+				TargetAttributes = {
+					F12D50BF1D2DD2D500E96561 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F12D50D31D2DD2D500E96561 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F12D50BF1D2DD2D500E96561;
+					};
+				};
+			};
+			buildConfigurationList = F12D50BB1D2DD2D500E96561 /* Build configuration list for PBXProject "Jabroni" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F12D50B71D2DD2D500E96561;
+			productRefGroup = F12D50C11D2DD2D500E96561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F12D50BF1D2DD2D500E96561 /* Jabroni */,
+				F12D50D31D2DD2D500E96561 /* JabroniTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F12D50BE1D2DD2D500E96561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12D50CE1D2DD2D500E96561 /* LaunchScreen.storyboard in Resources */,
+				F1AD64841D2DEAD9001D5B72 /* GoogleService-Info.plist in Resources */,
+				F12D50CB1D2DD2D500E96561 /* Assets.xcassets in Resources */,
+				F12D50C91D2DD2D500E96561 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12D50D21D2DD2D500E96561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1AD64851D2DEAD9001D5B72 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13B60D4299130F7E001B8904 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JabroniTests/Pods-JabroniTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15867C9CEADAE841336A639F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jabroni/Pods-Jabroni-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DC4146F71A37DC9C18FA446 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JabroniTests/Pods-JabroniTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		891F0C3F0D57137073D2CABD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jabroni/Pods-Jabroni-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD7AEE825EF16622B41D4AF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC0619E08B720D7F176E8EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F12D50BC1D2DD2D500E96561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12D50E41D2DD2E300E96561 /* JabroniViewController.swift in Sources */,
+				F12D50C41D2DD2D500E96561 /* AppDelegate.swift in Sources */,
+				F12D50E81D2DD6BD00E96561 /* JabroniObject.swift in Sources */,
+				F12D50EE1D2DD8B300E96561 /* User.swift in Sources */,
+				F12D50E61D2DD68E00E96561 /* JabroniQuery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12D50D01D2DD2D500E96561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12D50D91D2DD2D500E96561 /* JabroniTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F12D50D61D2DD2D500E96561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12D50BF1D2DD2D500E96561 /* Jabroni */;
+			targetProxy = F12D50D51D2DD2D500E96561 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F12D50C71D2DD2D500E96561 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F12D50C81D2DD2D500E96561 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F12D50CC1D2DD2D500E96561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F12D50CD1D2DD2D500E96561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F12D50DB1D2DD2D500E96561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F12D50DC1D2DD2D500E96561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F12D50DE1D2DD2D500E96561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4981540D45A057486B12A5FC /* Pods-Jabroni.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jabroni/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.South-Bend-Code-School.Jabroni";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F12D50DF1D2DD2D500E96561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 739C77C2B4E0B3066711218B /* Pods-Jabroni.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jabroni/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.South-Bend-Code-School.Jabroni";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F12D50E11D2DD2D500E96561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEA2827881606FA0EC24EC33 /* Pods-JabroniTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JabroniTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.South-Bend-Code-School.JabroniTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jabroni.app/Jabroni";
+			};
+			name = Debug;
+		};
+		F12D50E21D2DD2D500E96561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCBCCCD5711FCDD84AAD5DF /* Pods-JabroniTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JabroniTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.South-Bend-Code-School.JabroniTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jabroni.app/Jabroni";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F12D50BB1D2DD2D500E96561 /* Build configuration list for PBXProject "Jabroni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12D50DB1D2DD2D500E96561 /* Debug */,
+				F12D50DC1D2DD2D500E96561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12D50DD1D2DD2D500E96561 /* Build configuration list for PBXNativeTarget "Jabroni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12D50DE1D2DD2D500E96561 /* Debug */,
+				F12D50DF1D2DD2D500E96561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12D50E01D2DD2D500E96561 /* Build configuration list for PBXNativeTarget "JabroniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12D50E11D2DD2D500E96561 /* Debug */,
+				F12D50E21D2DD2D500E96561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F12D50B81D2DD2D500E96561 /* Project object */;
+}
